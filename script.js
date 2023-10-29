@@ -25,7 +25,7 @@ async function ai(){
     let api = await fetch(`https://langapi.cyclic.app/api/openai?text=${msg.value}`)
     msg.value = ''
     let apis = await api.json()
-    ttt.textContent=apis.respon
+    ttt.textContent=apis.result
     canCmd = true
   } catch(error){
     console.log(error)
