@@ -22,7 +22,7 @@ async function ai(){
     ttt.textContent='Tunggu...'
     el.appendChild(ttt)
   try{
-    let api = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${msg.value}`)
+    let api = await fetch(`https://langapi.cyclic.app/api/openai?text=${msg.value}`)
     msg.value = ''
     let apis = await api.json()
     ttt.textContent=apis.respon
